@@ -30,7 +30,7 @@ podTemplate(label: label, cloud: 'kubernetes',
                     }
                  }
                 else {
-                    echo 'Skip the unit test'
+                    echo 'Skip the unit test done'
                 }
             }
         

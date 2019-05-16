@@ -16,7 +16,6 @@ podTemplate(label: label, cloud: 'kubernetes',
         def commit = scmVars.GIT_COMMIT
         def branch = scmVars.GIT_BRANCH
 
-
       stage('git chenkout'){
              git credentialsId: '6926e733-f572-4f83-b9a9-6d8e223ce2a9', url: ' https://github.com/atinc/wt-eros'
       

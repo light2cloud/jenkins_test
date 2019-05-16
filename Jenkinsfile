@@ -21,7 +21,6 @@ podTemplate(label: label, cloud: 'kubernetes',
       
   }
 
-
         stage('Run Unit Test') {
             script {
                 if (branch != "origin/master" && branch != "master") {

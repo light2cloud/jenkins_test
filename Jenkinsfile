@@ -12,6 +12,7 @@ podTemplate(label: label, cloud: 'kubernetes',
 ) {
     node(label) {
         
+        
         def scmVars = checkout scm
         def commit = scmVars.GIT_COMMIT
         def branch = scmVars.GIT_BRANCH

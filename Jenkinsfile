@@ -20,7 +20,8 @@ podTemplate(label: label, cloud: 'kubernetes',
 
         stage('Run Unit Test') {
             script {
-
+               
+                sh 'echo --- $TAGNAME ----'
                 sh 'printenv'
                 sh 'git describe --tags'
                 

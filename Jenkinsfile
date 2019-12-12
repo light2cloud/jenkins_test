@@ -20,18 +20,10 @@ podTemplate(label: label, cloud: 'kubernetes',
 
         stage('Run Unit Test') {
             script {
-                if (branch != "origin/master" && branch != "master") {
-               
-                    echo 'Ready to run unit test'
 
-                    container('certified') {
-
-                        sh "npm -v"
-                    }
-                 }
-                else {
-                    echo 'Skip the unit test'
-                }
+                sh 'printenv'
+                sh 'git describe --tags'
+                
             }
         
         }
